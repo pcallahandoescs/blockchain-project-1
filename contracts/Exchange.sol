@@ -211,7 +211,6 @@ contract Exchange {
         uint256 _feeAmount = (_amountGet * feePercent) / 100;
 
         // Execute the trade
-        // do trade here...
         tokens[_tokenGet][msg.sender] = 
             tokens[_tokenGet][msg.sender] - 
             (_amountGet + _feeAmount);
@@ -239,5 +238,4 @@ contract Exchange {
             block.timestamp
         );
     }
-
 }
